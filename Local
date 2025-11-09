@@ -14,7 +14,7 @@ local discordLink = "https://discord.gg/wJh39RVj" -- put your actual invite here
 
 -- ScreenGui
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "KyypieGui"
+screenGui.Name = "SAILYNxSHIGui"
 screenGui.ResetOnSpawn = false
 screenGui.Parent = playerGui
 screenGui.DisplayOrder = 100
